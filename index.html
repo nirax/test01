@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="app.min.css">
+    <style>
+      /* TODO */
+    </style>
+  </head>
+
+  <body>
+<h1>My page from hell</h1>
+    <div class="app-page" data-page="home">
+ <div class="app-topbar">
+  <div class="app-title">Simple Web App</div>
+  </div>
+  <div class="app-content">
+<br />
+<div class="app-button green" data-target="SignIn">SignIn</div>
+<br />
+<div class="app-button blue" data-target="SignUp">SignUp</div>
+</div>
+  </div>
+
+<div class="app-page" data-page="SignIn">
+<div class="app-topbar">
+<div class="app-button left blue" data-target="home">Home</div>
+</div>
+<br />
+<div class="app-content">
+<input id="btnUsername" class="app-input" placeholder="Username">
+<input id="btnPass" class="app-input" placeholder="Password" type="password">
+<br />
+<div id="btnSignIn" class="app-button green">SignIn</div>
+</div>
+</div>
+
+<div class="app-page" data-page="SignUp">
+<div class="app-topbar">
+<div class="app-button left blue" data-target="home">Home</div>
+</div>
+<br />
+<div class="app-content">
+<input id="btnEmail" class="app-input" placeholder="Email">
+<input id="btnPassword"" class="app-input" placeholder="Password" type="password">
+<br />
+<div id="btnSignUp" class="app-button green">SignUp</div>
+</div>
+</div>
+
+<div class="app-page" data-page="LoginHome">
+<div class="app-topbar">
+<div id="btnShowList" class="app-button red left">Wish List</div>
+<div class="app-title">Welcome Home!! <span class="user"></span></div>
+<div id="btnLogout" class="app-button red right ">Logout</div>
+</div>
+<div class="app-content">
+
+
+<input id="txtWish" class="app-input" placeholder="wish" >
+<br />
+<div id="btnAdd" class="app-button green">Add Wish</div>
+
+</div>
+</div>
+
+
+
+<div class="app-page" data-page="ErrorPage">
+<div class="app-content">
+An error occurred while trying to login
+</div>
+</div>
+
+<div class="app-page" data-page="WishList">
+<div class="app-topbar">
+<div class="app-title">Wish List</div>
+<div class="app-button left blue" >Back</div>
+</div>
+<div class="app-content">
+<ul class="app-list">
+  
+</ul>
+</div>
+</div>
+
+<script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.17/firebase.js'></script>
+	<script type='text/javascript'
+        src='https://cdn.firebase.com/js/simple-login/1.6.1/firebase-simple-login.js'>
+</script>
+    <script src="jquery-1.9.0.js"></script>
+    <script src="app.min.js"></script>
+    <script src="controller.js">
+    </script>
+  </body>
+</html>
